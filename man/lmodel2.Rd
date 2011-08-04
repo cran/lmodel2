@@ -4,11 +4,11 @@
 \alias{plot.lmodel2}
 \alias{lines.lmodel2}
 \alias{print.lmodel2}
+\alias{permutest.lmodel2}
 \alias{MA.reg}
 \alias{SMA.reg}
 \alias{CLma}
 \alias{CLsma}
-\alias{permutest.lmodel2}
 
 \title{Model II regression}
 
@@ -113,6 +113,14 @@ A tutorial (file \dQuote{Model II User's guide, R edition}) is provided
 with this function, and can be read within \R session using command
 \code{vignette("mod2user", package="lmodel2")}. 
 }
+
+\note{The package exports only the main functions \code{lmodel2},
+  \code{plot.lmodel2} and \code{lines.lmodel2}.  Much of the work is
+  done by internal functions which are not directly visible, but you
+  can use triple colon to see or directly use these functions (e.g.,
+  \code{lmodel2:::print.lmodel2}).  Internal functions that perform
+  essential parts of the analysis are \code{MA.reg}, \code{SMA.reg},
+  \code{CLma}, \code{CLsma} and \code{permutest.lmodel2}. }
 
 \author{ Pierre Legendre, Departement de Sciences Biologiques, Universite de Montreal }
 
