@@ -1,8 +1,7 @@
 % -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
 %\VignetteIndexEntry{Model II Regression User Guide}
 \documentclass[a4paper,10pt,reqno]{amsart}
-\usepackage{ucs}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
@@ -25,7 +24,7 @@ Montr{\'e}al, C.P. 6128, succursale Centre-ville, Montr{\'e}al,
 Qu{\'e}bec H3C 3J7, Canada}
 \email{Pierre.Legendre@umontreal.ca}
 
-\date{$ $Id: mod2user.Rnw 2639 2013-10-17 10:47:47Z jarioksa $ $}
+\date{$ $Id$ $}
 
 \begin{document}
 
@@ -204,7 +203,7 @@ Check scatter diagram: no outlier & Yes\\
   only method that minimizes the squared residuals in y. The OLS
   regression line itself is meaningless. Do not use the standard error
   and confidence bands, however, unless $x$ is known to be free of
-  error \citep[p. 545, Table 14.3]{SokalRohlf95}; this warning applies
+  error \citep[p.~545, Table~14.3]{SokalRohlf95}; this warning applies
   in particular to the 95\% confidence intervals computed for OLS by
   this program.
 \item Observations may be compared to the predictions of a
@@ -232,7 +231,7 @@ Check scatter diagram: no outlier & Yes\\
 \section{Ranged major axis regression}
 
 Ranged major axis regression (RMA) is described in
-\citep[511--512]{Legendre-Legendre98}. It is computed as follows:
+\citep[p.~551]{Legendre-Legendre98}. It is computed as follows:
 
 \begin{enumerate}
 \item Transform the $y$ and $x$ variables into $y'$ and $x'$,
@@ -299,7 +298,7 @@ of outliers because they cause important changes to the estimates of
 the ranges of the variables. Outliers that are not aligned fairly well
 with the dispersion ellipse of the objects may have an undesirable
 influence on the slope estimate. The identification and treatment of
-outliers is discussed in \citep[Section 13.4]{SokalRohlf95}. Outliers
+outliers is discussed in \citep[Chapter~13.4]{SokalRohlf95}. Outliers
 may, in some cases, be eliminated from the data set, or they may be
 subjected to a winsorizing procedure described by these authors.
 
@@ -340,7 +339,7 @@ following results:
   statistics. In OLS simple linear regression, a permutation test of
   significance based on the $r$ statistic is equivalent to a
   permutation test based on the pivotal $t$-statistic associated with
-  $b_{OLS}$ \citep[21]{Legendre-Legendre98}. On the other hand, across
+  $b_{OLS}$ \citep[p.~24]{Legendre-Legendre98}. On the other hand, across
   the permutations, the slope estimate ($b_{OLS}$) differs from $r$ by a
   constant ($s_y/s_x$) since $b_{OLS} = r_{xy} s_y/s_x$, so that $b_{OLS}$ and
   $r$ are equivalent statistics for permutation testing. As a
@@ -367,7 +366,7 @@ an underestimation of these confidence intervals.
 
 \begin{figure}
   \centering
-\resizebox{\linewidth}{!}{  
+\resizebox{\linewidth}{!}{
   \begin{tikzpicture}
     \draw[->, very thick] (0,0) -- (6,0);
     \draw[<-, very thick]  (3,3) -- (3,-3);
@@ -583,14 +582,14 @@ of permutations + 1), where
 \label{sec:exa3}%
 \subsubsection{Input data}
 
-The following table presents data used by \citet[Box
-14.12]{SokalRohlf95} to illustrate model II regression analysis. They
-concern the mass ($x$) of unspawned females of a California fish, the
-cabezon (\emph{Scorpaenichthys marmoratus}), and the number of eggs
-they subsequently produced ($y$). One may be interested to estimate
-the functional equation relating the number of eggs to the mass of
-females before spawning. The physical units of the variables are as in
-the table published by \citet[546]{SokalRohlf95}.
+The following table presents data used by
+\citet[Box~14.12]{SokalRohlf95} to illustrate model II regression
+analysis. They concern the mass ($x$) of unspawned females of a
+California fish, the cabezon (\emph{Scorpaenichthys marmoratus}), and
+the number of eggs they subsequently produced ($y$). One may be
+interested to estimate the functional equation relating the number of
+eggs to the mass of females before spawning. The physical units of the
+variables are as in the table published by \citet[p.~546]{SokalRohlf95}.
 
 Since the variables are in different physical units and are estimated
 with error, and their distribution is approximately bivariate normal,
