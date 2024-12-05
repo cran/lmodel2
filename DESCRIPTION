@@ -1,17 +1,24 @@
 Package: lmodel2
-Type: Package
 Title: Model II Regression
-Version: 1.7-3
-Date: 2018-02-05
-Author: Pierre Legendre
-Maintainer: Jari Oksanen <jari.oksanen@oulu.fi>
-Depends: R (>= 2.14.0)
+Version: 1.7-4
+Authors@R: c(person(given = "Pierre",
+                    family = "Legendre",
+                    role = "aut",
+		    email = "pierre.legendre@umontreal.ca"),
+             person(given = "Jari",
+                    family = "Oksanen",
+                    role = "cre",
+                    email = "jhoksane@gmail.com"))
 Description: Computes model II simple linear regression using ordinary
  least squares (OLS), major axis (MA), standard major axis (SMA), and
  ranged major axis (RMA).
+BugReports: https://github.com/vegandevs/lmodel2/issues
 License: GPL-2
 LazyLoad: yes
 NeedsCompilation: no
-Packaged: 2018-02-05 07:48:12 UTC; jarioksa
+Packaged: 2024-12-04 17:20:32 UTC; jarioksa
+Author: Pierre Legendre [aut],
+  Jari Oksanen [cre]
+Maintainer: Jari Oksanen <jhoksane@gmail.com>
 Repository: CRAN
-Date/Publication: 2018-02-05 22:59:16 UTC
+Date/Publication: 2024-12-05 08:40:02 UTC

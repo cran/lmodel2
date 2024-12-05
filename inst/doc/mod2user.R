@@ -1,5 +1,4 @@
 ### R code from vignette source 'mod2user.Rnw'
-### Encoding: UTF-8
 
 ###################################################
 ### code chunk number 1: mod2user.Rnw:33-37
